@@ -3,22 +3,21 @@ import './App.css'
 
 
 const Comp = props => {
-    const {keyIndex} = props;
+    const {keyIndex} = props
     return(
         <div>
             <h1>Now NASA nice photo there!</h1>
-                <div className='img-container'>
-                    <img src={keyIndex.hdurl} />
+                <div>
+                    <img src={keyIndex.url} />
                 </div>
-                <div className='text-container'>
 
+                <div>
                     <p>{keyIndex.date}</p>
-                    <p>{keyIndex.title}</p>
+                    <h3>{keyIndex.title}</h3>
                     <p>Copyright: {keyIndex.copyright}</p>
-                    
                 </div>
-                <div className='exp'>
-                    <p>{keyIndex.explanation}</p>
+                <div>
+                    <p>{keyIndex.explantion}</p>
                 </div>
         </div>
     )
